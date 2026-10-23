@@ -1,0 +1,50 @@
+# Virtual Environments & Binaries
+.venv/
+venv/
+node_bin/
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+dist/
+frontend/dist/
+
+# Large Model Weights (Downloaded via script)
+weights/
+fashn-vton-1.5/weights/
+*.safetensors
+*.onnx
+*.bin
+*.pt
+*.pth
+
+# Generated Try-On Results & Outputs
+generated/*
+!generated/.gitkeep
+outputs/
+
+# Databases & Runtime State
+data/*
+!data/.gitkeep
+*.db
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+
+# Customer Uploads (Preserve sample demo model)
+uploads/customers/*
+!uploads/customers/demo-model.webp
+!uploads/customers/.gitkeep
+
+# Environment & Secrets
+.env
+.env.local
+
+# Caches & Logs
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+*.log
+.DS_Store
